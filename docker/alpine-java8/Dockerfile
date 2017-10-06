@@ -1,9 +1,7 @@
 # AlpineLinux with a glibc-2.23 and Oracle Java 8
 FROM alpine:3.4
 
-MAINTAINER Anastas Dancha <anapsix@random.io>
-# thanks to Vladimir Krivosheev <develar@gmail.com> aka @develar for smaller image
-# and Victor Palma <palma.victor@gmail.com> aka @devx for pointing it out
+MAINTAINER Joao Costa <costajlmpp@gmail.com>
 
 # Java Version and other ENV
 ENV JAVA_VERSION_MAJOR=8 \
