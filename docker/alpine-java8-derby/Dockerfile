@@ -1,6 +1,6 @@
-FROM jcosta/alpine-java8
+FROM costajlmpp/alpine-java8
 
-MAINTAINER jcosta, costajlmpp@gmail.com
+MAINTAINER Joao Costa, costajlmpp@gmail.com
 
 ENV INSTALL_DIR /opt
 ENV VERSION db-derby-10.13.1.1
