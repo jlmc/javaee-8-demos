@@ -3,6 +3,7 @@ package org.jcosta.book.boundary;
 import org.jcosta.book.entity.Book;
 
 import javax.inject.Inject;
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 import java.net.URI;
@@ -25,12 +26,19 @@ public class BookResource {
     }
 
     @POST
-    public Response registe(Book book) {
-        this.manager.registe(book);
+    public Response register(@Valid Book book) {
+        this.manager.register(book);
 
         final URI uri = uriInfo.getAbsolutePathBuilder().path("{id}").build(book.getIsbn());
 
         return Response.created(uri).entity(book).build();
+    }
+
+    @GET
+    @Path("{isbn}")
+    public Response get(@PathParam("isbn") String isbn) {
+        Book book = this.manager.get(isbn);
+        return Response.ok(book).build();
     }
 
 }
