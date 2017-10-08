@@ -18,7 +18,8 @@ public class BookManager {
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Book> search() {
         return this.manager
-                .createQuery("select b from Book b", Book.class).getResultList();
+                .createQuery("select b from Book b left join fetch b.authors", Book.class)
+                .getResultList();
     }
 
     @TransactionAttribute(TransactionAttributeType.REQUIRED)

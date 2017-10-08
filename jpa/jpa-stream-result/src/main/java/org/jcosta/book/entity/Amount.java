@@ -1,10 +1,13 @@
 package org.jcosta.book.entity;
 
-import javax.persistence.*;
+import org.jcosta.book.control.CurrencyAdapter;
+
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Currency;
@@ -52,7 +55,8 @@ public class Amount implements Serializable {
     @Column(precision = 15, scale = 2, nullable = false)
     private BigDecimal value = BigDecimal.ZERO;
 
-    @XmlTransient
+    @XmlJavaTypeAdapter(CurrencyAdapter.class)
+    //@XmlTransient
     //@Convert(converter = CurrencyAttributeConverter.class)
     @Column(nullable = false)
     private java.util.Currency currency = Currency.getInstance("EUR");
