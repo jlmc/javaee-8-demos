@@ -2,6 +2,7 @@ package org.jcosta.book.entity;
 
 import org.jcosta.book.control.CurrencyConverter;
 
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.persistence.AttributeConverter;
 import java.util.Currency;
@@ -11,6 +12,15 @@ public class CurrencyAttributeConverter implements AttributeConverter<Currency, 
 
     @Inject
     CurrencyConverter converter;
+
+    public CurrencyAttributeConverter() {
+        this.converter = CurrencyConverter.instance();
+    }
+
+    @PostConstruct
+    public void init() {
+        System.out.println("CDI is Working for AttributeConverter");
+    }
 
     @Override
     public String convertToDatabaseColumn(Currency attribute) {

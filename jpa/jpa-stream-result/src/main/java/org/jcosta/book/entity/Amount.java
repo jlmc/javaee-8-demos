@@ -1,7 +1,9 @@
 package org.jcosta.book.entity;
 
-import org.jcosta.book.control.CurrencyAdapter;
+import org.jcosta.book.control.CurrencyJsonbAdapter;
+import org.jcosta.book.control.CurrencyXmlAdapter;
 
+import javax.json.bind.annotation.JsonbTypeAdapter;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.xml.bind.annotation.XmlAccessType;
@@ -55,7 +57,9 @@ public class Amount implements Serializable {
     @Column(precision = 15, scale = 2, nullable = false)
     private BigDecimal value = BigDecimal.ZERO;
 
-    @XmlJavaTypeAdapter(CurrencyAdapter.class)
+
+    @JsonbTypeAdapter(CurrencyJsonbAdapter.class)
+    @XmlJavaTypeAdapter(CurrencyXmlAdapter.class)
     //@XmlTransient
     //@Convert(converter = CurrencyAttributeConverter.class)
     @Column(nullable = false)

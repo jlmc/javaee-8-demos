@@ -1,6 +1,8 @@
 package org.jcosta.book.boundary;
 
 import org.jcosta.book.entity.Book;
+import org.jcosta.book.entity.Gender;
+import org.jcosta.book.entity.QueryParameter;
 
 import javax.inject.Inject;
 import javax.validation.Valid;
@@ -18,11 +20,21 @@ public class BookResource {
     @Context UriInfo uriInfo;
 
     @GET
-    public Response search() {
+    public Response search(
+            @QueryParam("gender") String gender,
+            @QueryParam("title") String title) {
 
-        GenericEntity<List<Book>> books = new GenericEntity<List<Book>>(this.manager.search()){};
+        final QueryParameter queryParameter = QueryParameter.with("gender", gender).and("title", title);
+
+        GenericEntity<List<Book>> books = new GenericEntity<List<Book>>(this.manager.search(queryParameter)){};
 
         return Response.ok(books).build();
+    }
+
+    @GET
+    @Path("publishings")
+    public List<String> getBooksPublishings() {
+        return manager.getBooksPublishings();
     }
 
     @POST

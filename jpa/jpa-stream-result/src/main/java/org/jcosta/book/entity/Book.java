@@ -14,12 +14,18 @@ import java.util.Set;
 @XmlAccessorType(XmlAccessType.FIELD)
 
 @Entity
-@Table(name = "book")
+@Table(name = "BOOK")
 
+@EntityListeners({
+    BookEntityListener.class
+})
+/*
 @NamedQueries({
     @NamedQuery(name = Book.FIND_BY_ISBN, query = "select b from Book b left join fetch b.authors  where b.isbn = :isbn"),
     @NamedQuery(name = Book.FIND_WHERE_PUBLISHING_DATE_AFTER, query = "select b from Book b left join fetch b.authors where b.publishingDate > :publishingDate")
-})
+})*/
+@NamedQuery(name = Book.FIND_BY_ISBN, query = "select b from Book b left join fetch b.authors  where b.isbn = :isbn")
+@NamedQuery(name = Book.FIND_WHERE_PUBLISHING_DATE_AFTER, query = "select b from Book b left join fetch b.authors where b.publishingDate > :publishingDate")
 public class Book {
 
     public static final String FIND_BY_ISBN = "org.jcosta.book.entity.Book.FIND_BY_ISBN";
@@ -37,6 +43,10 @@ public class Book {
 
     @Column(name = "PUBLISHING_DATE", nullable = false)
     private LocalDateTime publishingDate;
+
+    @Column(length = 100, nullable = false)
+    @Enumerated(EnumType.STRING)
+    private Gender gender;
 
     @Embedded
     private Amount price;
@@ -78,5 +88,14 @@ public class Book {
 
     public void setPrice(Amount price) {
         this.price = price;
+    }
+
+
+    public Gender getGender() {
+        return gender;
+    }
+
+    public void setGender(Gender gender) {
+        this.gender = gender;
     }
 }
