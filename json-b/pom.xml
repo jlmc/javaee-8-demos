@@ -10,11 +10,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jax-rs</artifactId>
+    <artifactId>json-b</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>server-sent-events</module>
+        <module>json-b-with-jax-rs</module>
     </modules>
     
 </project>

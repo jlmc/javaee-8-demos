@@ -1,16 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.jcosta</groupId>
-    <artifactId>json-b-with-jax-rs</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
 
     <parent>
-        <groupId>org.jcosta</groupId>
+        <groupId>org.costajlmpp</groupId>
         <artifactId>json-b</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
+    <artifactId>json-b-with-jax-rs</artifactId>
+    <packaging>war</packaging>
 
     <dependencies>
         <dependency>

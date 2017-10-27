@@ -61,10 +61,12 @@ public class BookManager {
 
         List<Predicate> predicates = new ArrayList<>();
         if (parameters.contains("gender")) {
+
             final String gender = parameters.get("gender");
             String partial = gender.toUpperCase() + "%";
             final Predicate predicate = builder.like(builder.upper(bookRoot.get("gender")), partial);
             predicates.add(predicate);
+
         }
 
         if (parameters.contains("title")) {

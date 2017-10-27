@@ -6,25 +6,24 @@
 
     <parent>
         <groupId>org.costajlmpp</groupId>
-        <artifactId>cdi</artifactId>
+        <artifactId>javaee8-demos</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>cdi-se</artifactId>
+    <artifactId>security</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>security-basic-jaxrs</module>
+        <module>security-custom-form-jsf</module>
+        <module>security-custom-form-servlet</module>
+        <module>security-form-mem</module>
+        <module>security-jwt</module>
+    </modules>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <failOnMissingWebXml>false</failOnMissingWebXml>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.jboss.weld.se</groupId>
-            <artifactId>weld-se-core</artifactId>
-            <version>3.0.1.Final</version>
-        </dependency>
-    </dependencies>
-
 </project>

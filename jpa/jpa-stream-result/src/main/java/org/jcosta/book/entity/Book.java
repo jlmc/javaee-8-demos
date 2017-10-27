@@ -24,10 +24,12 @@ import java.util.Set;
     @NamedQuery(name = Book.FIND_BY_ISBN, query = "select b from Book b left join fetch b.authors  where b.isbn = :isbn"),
     @NamedQuery(name = Book.FIND_WHERE_PUBLISHING_DATE_AFTER, query = "select b from Book b left join fetch b.authors where b.publishingDate > :publishingDate")
 })*/
-@NamedQuery(name = Book.FIND_BY_ISBN, query = "select b from Book b left join fetch b.authors  where b.isbn = :isbn")
-@NamedQuery(name = Book.FIND_WHERE_PUBLISHING_DATE_AFTER, query = "select b from Book b left join fetch b.authors where b.publishingDate > :publishingDate")
+@NamedQuery(name = Book.FIND_ALL, query = "select distinct b from Book b left join fetch b.authors order by b.isbn")
+@NamedQuery(name = Book.FIND_BY_ISBN, query = "select distinct b from Book b left join fetch b.authors  where b.isbn = :isbn")
+@NamedQuery(name = Book.FIND_WHERE_PUBLISHING_DATE_AFTER, query = "select distinct b from Book b left join fetch b.authors where b.publishingDate > :publishingDate")
 public class Book {
 
+    public static final String FIND_ALL = "org.jcosta.book.entity.Book.FIND_ALL";
     public static final String FIND_BY_ISBN = "org.jcosta.book.entity.Book.FIND_BY_ISBN";
     public static final String FIND_WHERE_PUBLISHING_DATE_AFTER = "org.jcosta.book.entity.Book.FIND_WHERE_PUBLISHING_DATE_AFTER";
 

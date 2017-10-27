@@ -10,11 +10,11 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>jax-rs</artifactId>
+    <artifactId>jpa</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>server-sent-events</module>
+        <module>jpa-stream-result</module>
     </modules>
     
 </project>

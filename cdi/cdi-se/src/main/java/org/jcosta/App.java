@@ -5,7 +5,6 @@ import org.jcosta.store.BookStore;
 import javax.enterprise.inject.Instance;
 import javax.enterprise.inject.se.SeContainer;
 import javax.enterprise.inject.se.SeContainerInitializer;
-import javax.enterprise.inject.spi.CDI;
 
 public class App {
 
