@@ -1,4 +1,4 @@
-package org.jcosta.broadcast;
+package org.costajlmpp.broadcast;
 
 import javax.ejb.Schedule;
 import javax.ejb.Singleton;
@@ -12,10 +12,6 @@ import javax.ws.rs.sse.SseBroadcaster;
 import javax.ws.rs.sse.SseEventSink;
 import java.time.LocalDateTime;
 
-/**
- * @author costa
- * on 27/09/2017.
- */
 @Singleton
 @Path("beats") // curl -i  http://localhost:8080/sse/rs/beats
 public class BroadcastsResource {
