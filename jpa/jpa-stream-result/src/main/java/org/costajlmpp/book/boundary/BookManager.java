@@ -1,7 +1,7 @@
-package org.jcosta.book.boundary;
+package org.costajlmpp.book.boundary;
 
-import org.jcosta.book.entity.Book;
-import org.jcosta.book.entity.QueryParameter;
+import org.costajlmpp.book.entity.Book;
+import org.costajlmpp.book.entity.QueryParameter;
 
 import javax.ejb.Stateless;
 import javax.ejb.TransactionAttribute;

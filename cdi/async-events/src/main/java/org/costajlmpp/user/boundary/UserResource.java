@@ -1,17 +1,15 @@
-package org.jcosta.user.boundary;
+package org.costajlmpp.user.boundary;
 
 
-import org.jcosta.user.entity.Role;
-import org.jcosta.user.entity.User;
+import org.costajlmpp.user.entity.Role;
+import org.costajlmpp.user.entity.User;
 
-import javax.json.Json;
 import javax.persistence.EntityGraph;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Subgraph;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
-import javax.xml.ws.Response;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;

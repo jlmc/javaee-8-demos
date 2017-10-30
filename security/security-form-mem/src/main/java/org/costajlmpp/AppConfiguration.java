@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.security.enterprise.authentication.mechanism.http.FormAuthenticationMechanismDefinition;

@@ -1,4 +1,4 @@
-package org.jcosta.book.control;
+package org.costajlmpp.book.control;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;

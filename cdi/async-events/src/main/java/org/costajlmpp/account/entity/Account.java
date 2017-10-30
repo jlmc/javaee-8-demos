@@ -1,14 +1,9 @@
-package org.jcosta.account.entity;
+package org.costajlmpp.account.entity;
 
 import javax.json.bind.annotation.JsonbNillable;
 import javax.json.bind.annotation.JsonbPropertyOrder;
 import javax.json.bind.config.PropertyOrderStrategy;
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
 import java.util.*;
 
 @JsonbPropertyOrder(PropertyOrderStrategy.LEXICOGRAPHICAL)
@@ -19,8 +14,8 @@ import java.util.*;
 @NamedQuery(name = Account.FIND_BY_ID, query = "select distinct a from Account a left join fetch a.moviments where a.id = :id")
 public class Account {
 
-    public static final String FIND = "org.jcosta.account.entity.Account.find";
-    public static final String FIND_BY_ID = "org.jcosta.account.entity.Account.find_by_id";
+    public static final String FIND = "org.costajlmpp.account.entity.Account.find";
+    public static final String FIND_BY_ID = "org.costajlmpp.account.entity.Account.find_by_id";
 
     @Id
     @GeneratedValue(generator="uuid")

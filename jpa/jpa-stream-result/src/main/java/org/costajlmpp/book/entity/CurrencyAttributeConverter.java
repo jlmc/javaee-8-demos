@@ -1,6 +1,6 @@
-package org.jcosta.book.entity;
+package org.costajlmpp.book.entity;
 
-import org.jcosta.book.control.CurrencyConverter;
+import org.costajlmpp.book.control.CurrencyConverter;
 
 import javax.annotation.PostConstruct;
 import javax.inject.Inject;

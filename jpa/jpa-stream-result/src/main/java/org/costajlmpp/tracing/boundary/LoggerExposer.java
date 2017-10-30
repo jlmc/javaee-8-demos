@@ -1,4 +1,4 @@
-package org.jcosta.tracing.boundary;
+package org.costajlmpp.tracing.boundary;
 
 import javax.enterprise.inject.Produces;
 import javax.enterprise.inject.spi.InjectionPoint;

@@ -1,6 +1,6 @@
-package org.jcosta.security;
+package org.costajlmpp.security;
 
-import org.jcosta.security.entity.JWTCredential;
+import org.costajlmpp.security.entity.JWTCredential;
 
 /**
  * This is my custom JWT Validation Handler

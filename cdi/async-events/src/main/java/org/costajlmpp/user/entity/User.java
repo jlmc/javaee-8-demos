@@ -1,4 +1,4 @@
-package org.jcosta.user.entity;
+package org.costajlmpp.user.entity;
 
 import javax.persistence.*;
 import java.util.Collections;

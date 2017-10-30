@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;
@@ -24,8 +24,8 @@ public class TestIdentityStore implements IdentityStore {
 
     private CredentialValidationResult validate(UsernamePasswordCredential usernamePasswordCredential) {
 
-        if (usernamePasswordCredential.compareTo("jcosta", "secret1")) {
-            return new CredentialValidationResult("jcosta", new HashSet<>(Arrays.asList("ADMIN", "VIEW")));
+        if (usernamePasswordCredential.compareTo("costajlmpp", "secret1")) {
+            return new CredentialValidationResult("costajlmpp", new HashSet<>(Arrays.asList("ADMIN", "VIEW")));
         }
 
         return CredentialValidationResult.INVALID_RESULT;

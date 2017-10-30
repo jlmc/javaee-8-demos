@@ -1,6 +1,6 @@
-package org.jcosta.notification;
+package org.costajlmpp.notification;
 
-import org.jcosta.account.entity.Account;
+import org.costajlmpp.account.entity.Account;
 
 import javax.ejb.Stateless;
 import javax.enterprise.event.ObservesAsync;

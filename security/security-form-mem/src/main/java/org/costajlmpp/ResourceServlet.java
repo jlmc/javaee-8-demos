@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.annotation.security.DeclareRoles;
 import javax.servlet.ServletException;

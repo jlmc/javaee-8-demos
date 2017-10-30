@@ -1,7 +1,7 @@
-package org.jcosta.delivery;
+package org.costajlmpp.delivery;
 
 
-import org.jcosta.Purchase;
+import org.costajlmpp.Purchase;
 
 import javax.annotation.Priority;
 import javax.enterprise.context.ApplicationScoped;

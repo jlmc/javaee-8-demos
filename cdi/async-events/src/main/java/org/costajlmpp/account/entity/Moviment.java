@@ -1,11 +1,8 @@
-package org.jcosta.account.entity;
+package org.costajlmpp.account.entity;
 
 import javax.json.bind.annotation.*;
 import javax.json.bind.config.PropertyOrderStrategy;
 import javax.persistence.*;
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 

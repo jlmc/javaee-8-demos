@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.persistence.NoResultException;
 import javax.ws.rs.core.*;

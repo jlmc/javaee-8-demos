@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>server-sent-events</module>
-    <module>jax-rs-se-client</module>
+        <module>jax-rs-server</module>
+        <module>jax-rs-se-client</module>
   </modules>
     
 </project>

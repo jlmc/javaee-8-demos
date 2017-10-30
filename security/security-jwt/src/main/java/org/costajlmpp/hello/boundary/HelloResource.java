@@ -1,4 +1,4 @@
-package org.jcosta.hello.boundary;
+package org.costajlmpp.hello.boundary;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;

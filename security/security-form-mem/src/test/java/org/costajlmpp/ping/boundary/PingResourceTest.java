@@ -1,3 +1,3 @@
-package org.jcosta.ping.boundary;
+package org.costajlmpp.ping.boundary;
 
 public class PingResourceTest {}

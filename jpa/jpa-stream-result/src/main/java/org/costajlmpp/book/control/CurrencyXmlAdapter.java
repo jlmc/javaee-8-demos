@@ -1,4 +1,4 @@
-package org.jcosta.book.control;
+package org.costajlmpp.book.control;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.util.Currency;

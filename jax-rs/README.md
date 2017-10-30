@@ -149,7 +149,10 @@ public class BroadcastsResource {
  }
  ```
  
- 
+ git
 
 
+ NOTES:
  
+ https://www.slideshare.net/delabassee/jaxrs-21-reloaded
+ http://ridingthecrest.com/blog/2017/02/22/jax-rs-2_1-new-feature-introduction.html

@@ -1,4 +1,4 @@
-package org.jcosta.security.handler;
+package org.costajlmpp.security.handler;
 
 import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jose.JWEObject;
@@ -10,13 +10,11 @@ import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 import net.minidev.json.JSONArray;
 import net.minidev.json.JSONObject;
-import org.jcosta.security.JWTTokenHandler;
-import org.jcosta.security.entity.JWTCredential;
+import org.costajlmpp.security.JWTTokenHandler;
+import org.costajlmpp.security.entity.JWTCredential;
 
 import javax.annotation.PostConstruct;
 import java.io.InputStream;
-import java.security.interfaces.RSAKey;
-import java.security.interfaces.RSAPrivateKey;
 import java.text.ParseException;
 import java.util.*;
 

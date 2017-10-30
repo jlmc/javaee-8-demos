@@ -1,4 +1,4 @@
-package org.jcosta.book.entity;
+package org.costajlmpp.book.entity;
 
 import javax.inject.Inject;
 import javax.persistence.PostLoad;

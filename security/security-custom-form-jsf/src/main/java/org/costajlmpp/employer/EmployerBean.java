@@ -1,4 +1,4 @@
-package org.jcosta.employer;
+package org.costajlmpp.employer;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;

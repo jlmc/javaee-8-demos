@@ -1,6 +1,6 @@
-package org.jcosta.book.boundary;
+package org.costajlmpp.book.boundary;
 
-import org.jcosta.book.control.ReportGenerator;
+import org.costajlmpp.book.control.ReportGenerator;
 
 import javax.ejb.Schedule;
 import javax.ejb.Startup;

@@ -1,4 +1,4 @@
-package org.jcosta.administration;
+package org.costajlmpp.administration;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;

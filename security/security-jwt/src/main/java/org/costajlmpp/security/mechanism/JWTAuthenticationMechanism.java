@@ -1,7 +1,7 @@
-package org.jcosta.security.mechanism;
+package org.costajlmpp.security.mechanism;
 
-import org.jcosta.security.JWTTokenHandler;
-import org.jcosta.security.entity.JWTCredential;
+import org.costajlmpp.security.JWTTokenHandler;
+import org.costajlmpp.security.entity.JWTCredential;
 
 import javax.inject.Inject;
 import javax.security.enterprise.AuthenticationException;

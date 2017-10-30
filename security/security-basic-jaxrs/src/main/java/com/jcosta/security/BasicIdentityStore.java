@@ -20,7 +20,7 @@ import java.util.HashSet;
 @ApplicationScoped
 public class BasicIdentityStore implements IdentityStore {
 
-    private static final String CALLER = "jcosta";
+    private static final String CALLER = "costajlmpp";
     private static final String PASSWORD = "secret1";
 
 

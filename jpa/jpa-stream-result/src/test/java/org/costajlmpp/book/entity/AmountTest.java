@@ -1,4 +1,4 @@
-package org.jcosta.book.entity;
+package org.costajlmpp.book.entity;
 
 import org.junit.Rule;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package org.jcosta.account.entity;
+package org.costajlmpp.account.entity;
 
 /**
  * @author costa

@@ -1,4 +1,4 @@
-package org.jcosta.book.control;
+package org.costajlmpp.book.control;
 
 import javax.inject.Inject;
 import javax.json.bind.adapter.JsonbAdapter;

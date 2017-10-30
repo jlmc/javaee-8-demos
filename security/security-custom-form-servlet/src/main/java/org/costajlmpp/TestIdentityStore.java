@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.inject.Default;
@@ -13,7 +13,7 @@ import java.util.HashSet;
 @ApplicationScoped
 public class TestIdentityStore implements IdentityStore {
 
-    private static final String CALLER = "jcosta";
+    private static final String CALLER = "costajlmpp";
     private static final String PASSWORD = "secret1";
 
     @Override

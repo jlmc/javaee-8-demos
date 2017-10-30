@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import java.math.BigDecimal;
 import java.util.LinkedList;

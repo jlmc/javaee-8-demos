@@ -1,6 +1,6 @@
-package org.jcosta.book.control;
+package org.costajlmpp.book.control;
 
-import org.jcosta.book.entity.Book;
+import org.costajlmpp.book.entity.Book;
 
 import javax.inject.Inject;
 import javax.persistence.EntityManager;

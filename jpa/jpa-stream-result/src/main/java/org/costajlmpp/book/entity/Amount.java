@@ -1,7 +1,7 @@
-package org.jcosta.book.entity;
+package org.costajlmpp.book.entity;
 
-import org.jcosta.book.control.CurrencyJsonbAdapter;
-import org.jcosta.book.control.CurrencyXmlAdapter;
+import org.costajlmpp.book.control.CurrencyJsonbAdapter;
+import org.costajlmpp.book.control.CurrencyXmlAdapter;
 
 import javax.json.bind.annotation.JsonbTypeAdapter;
 import javax.persistence.Column;

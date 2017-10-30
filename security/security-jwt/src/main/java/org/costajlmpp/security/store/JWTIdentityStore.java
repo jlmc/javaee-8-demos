@@ -1,6 +1,6 @@
-package org.jcosta.security.store;
+package org.costajlmpp.security.store;
 
-import org.jcosta.security.entity.JWTCredential;
+import org.costajlmpp.security.entity.JWTCredential;
 
 import javax.annotation.PostConstruct;
 import javax.security.enterprise.credential.Credential;

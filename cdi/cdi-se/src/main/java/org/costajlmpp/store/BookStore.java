@@ -1,6 +1,6 @@
-package org.jcosta.store;
+package org.costajlmpp.store;
 
-import org.jcosta.Purchase;
+import org.costajlmpp.Purchase;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.enterprise.event.Event;

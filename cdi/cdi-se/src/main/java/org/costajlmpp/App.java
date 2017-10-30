@@ -1,6 +1,6 @@
-package org.jcosta;
+package org.costajlmpp;
 
-import org.jcosta.store.BookStore;
+import org.costajlmpp.store.BookStore;
 
 import javax.enterprise.inject.Instance;
 import javax.enterprise.inject.se.SeContainer;

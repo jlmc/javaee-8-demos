@@ -1,4 +1,4 @@
-package org.jcosta.core;
+package org.costajlmpp.core;
 
 import org.eclipse.persistence.config.SessionCustomizer;
 import org.eclipse.persistence.sequencing.UUIDSequence;

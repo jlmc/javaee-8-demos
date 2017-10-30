@@ -1,4 +1,4 @@
-package org.jcosta.security.entity;
+package org.costajlmpp.security.entity;
 
 import javax.security.enterprise.credential.Credential;
 import java.io.Serializable;

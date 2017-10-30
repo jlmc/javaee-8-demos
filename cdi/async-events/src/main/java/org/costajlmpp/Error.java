@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 public class Error {
 

@@ -1,4 +1,4 @@
-package org.jcosta.shows;
+package org.costajlmpp.shows;
 
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;

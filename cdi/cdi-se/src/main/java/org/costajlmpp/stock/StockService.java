@@ -1,6 +1,6 @@
-package org.jcosta.stock;
+package org.costajlmpp.stock;
 
-import org.jcosta.Purchase;
+import org.costajlmpp.Purchase;
 
 import javax.annotation.Priority;
 import javax.enterprise.context.ApplicationScoped;

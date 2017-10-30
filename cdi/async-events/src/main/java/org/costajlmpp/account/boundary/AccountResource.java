@@ -1,7 +1,7 @@
-package org.jcosta.account.boundary;
+package org.costajlmpp.account.boundary;
 
-import org.jcosta.account.entity.Account;
-import org.jcosta.account.entity.Moviment;
+import org.costajlmpp.account.entity.Account;
+import org.costajlmpp.account.entity.Moviment;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;

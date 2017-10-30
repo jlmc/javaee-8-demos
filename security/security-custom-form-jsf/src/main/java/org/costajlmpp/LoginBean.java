@@ -1,4 +1,4 @@
-package org.jcosta;
+package org.costajlmpp;
 
 import javax.enterprise.inject.Model;
 import javax.faces.application.FacesMessage;
