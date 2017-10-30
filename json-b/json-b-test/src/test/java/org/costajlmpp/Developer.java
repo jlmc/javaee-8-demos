@@ -1,9 +1,10 @@
 package org.costajlmpp;
 
-import javax.json.bind.annotation.JsonbProperty;
 import javax.json.bind.annotation.JsonbPropertyOrder;
 import javax.json.bind.annotation.JsonbTypeAdapter;
 import javax.json.bind.config.PropertyOrderStrategy;
+import java.time.LocalDate;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,10 +14,11 @@ public class Developer {
     public static enum Gender { M, F }
 
     @javax.json.bind.annotation.JsonbProperty("first-name")
+    @JsonbTypeAdapter(FirstNameAdapter.class)
     private String name;
+    private LocalDate born;
 
 
-   // @JsonbTypeAdapter(GenederAdapter.class)
     private Gender gender;
     private Map<String, String> phones = new HashMap<>();
 
@@ -28,6 +30,14 @@ public class Developer {
     }
 
     public Developer() {}
+
+    public LocalDate getBorn() {
+        return born;
+    }
+
+    public void setBorn(LocalDate born) {
+        this.born = born;
+    }
 
     public Gender getGender() {
         return gender;

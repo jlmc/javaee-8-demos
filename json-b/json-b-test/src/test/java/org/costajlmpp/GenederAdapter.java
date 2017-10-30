@@ -4,10 +4,6 @@ import javax.json.Json;
 import javax.json.JsonObject;
 import javax.json.bind.adapter.JsonbAdapter;
 
-/**
- * @author costa
- * on 30/10/2017.
- */
 public class GenederAdapter implements JsonbAdapter<Developer.Gender, JsonObject>{
     @Override
     public JsonObject adaptToJson(Developer.Gender obj) throws Exception {
