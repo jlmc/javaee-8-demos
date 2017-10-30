@@ -1,6 +1,5 @@
-package org.jcosta.present.entity;
+package org.costajlmpp.present.entity;
 
-import javax.json.bind.Jsonb;
 import javax.json.bind.JsonbBuilder;
 import javax.json.bind.JsonbConfig;
 import javax.json.bind.annotation.JsonbProperty;

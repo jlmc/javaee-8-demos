@@ -1,8 +1,7 @@
-package org.jcosta.present.boundary;
+package org.costajlmpp.present.boundary;
 
-import org.jcosta.present.entity.Developer;
+import org.costajlmpp.present.entity.Developer;
 
-import javax.resource.spi.ConfigProperty;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 
