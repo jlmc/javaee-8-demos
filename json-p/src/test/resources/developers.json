@@ -1,0 +1,25 @@
+[
+  {
+    "name": "Nuno",
+    "gender": "M",
+    "phones": {
+      "home": "239 641 840"
+    }
+  },
+  {
+    "name": "Joao",
+    "gender": "M",
+    "phones": {
+      "home": "239 641 999",
+      "mobile": "91989898"
+    }
+  },
+  {
+    "name": "Maria",
+    "gender": "M",
+    "phones": {
+      "home": "123 456 789",
+      "mobile": "91989898"
+    }
+  }
+]
