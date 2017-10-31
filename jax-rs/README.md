@@ -156,3 +156,6 @@ public class BroadcastsResource {
  
  https://www.slideshare.net/delabassee/jaxrs-21-reloaded
  http://ridingthecrest.com/blog/2017/02/22/jax-rs-2_1-new-feature-introduction.html
+ 
+ 
+ Serve Sent Event - https://github.com/jersey/jersey/tree/master/examples/server-sent-events-jersey

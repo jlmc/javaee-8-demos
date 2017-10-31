@@ -18,7 +18,7 @@ public class MessagesResourceTest {
          * no jax-rs 2.0 esta era forma
          */
         final Client client = ClientBuilder.newClient();
-        final WebTarget target = client.target("http://localhost:8080/doit/resources/todos");
+        final WebTarget target = client.target("http://localhost:8080/jax-rs-server/rs/todos");
 
 
         final String result = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -31,7 +31,7 @@ public class MessagesResourceTest {
          * no jax-rs 2.0 esta era forma
          */
         final Client client = ClientBuilder.newClient();
-        final WebTarget target = client.target("http://localhost:8080/doit/resources/todos");
+        final WebTarget target = client.target("http://localhost:8080/jax-rs-server/rs/todos");
 
 
         final Future<String> result = target.
@@ -48,7 +48,7 @@ public class MessagesResourceTest {
          * no jax-rs 2.0 esta era forma
          */
         final Client client = ClientBuilder.newClient();
-        final WebTarget target = client.target("http://localhost:8080/doit/resources/todos");
+        final WebTarget target = client.target("http://localhost:8080/jax-rs-server/rs/todos");
 
 
         final Future<ToDo> result = target.
@@ -81,7 +81,7 @@ public class MessagesResourceTest {
          * no jax-rs 2.1
          */
         final Client client = ClientBuilder.newClient();
-        final WebTarget target = client.target("http://localhost:8080/doit/resources/todos");
+        final WebTarget target = client.target("http://localhost:8080/jax-rs-server/rs/todos");
 
 
         final CompletionStage<String> onGetCompleted = target.
@@ -98,7 +98,7 @@ public class MessagesResourceTest {
          */
 
         final Client client = ClientBuilder.newClient();
-        final CompletionStage<JsonObject> onGetToDosCompleted = client.target("http://localhost:8080/doit/resources/todos/1").
+        final CompletionStage<JsonObject> onGetToDosCompleted = client.target("http://localhost:8080/jax-rs-server/rs/todos/1").
                 request(MediaType.APPLICATION_JSON).
                 rx().
                 get(JsonObject.class);
@@ -111,7 +111,7 @@ public class MessagesResourceTest {
 
     private void submitChanges(JsonObject jsonObject) {
         final Client client = ClientBuilder.newClient();
-        final CompletionStage<Response> onPostCOmplete = client.target("http://localhost:8080/doit/resources/todos").
+        final CompletionStage<Response> onPostCOmplete = client.target("http://localhost:8080/jax-rs-server/rs/todos").
                 request(MediaType.APPLICATION_JSON).
                 rx().
                 post(Entity.json(jsonObject));

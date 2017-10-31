@@ -14,6 +14,12 @@ public class JAXRSClientProvider  implements TestRule {
     private WebTarget target;
 
     private JAXRSClientProvider(String uri) {
+        /*
+        Configuration config = new ClientConfig().
+                property("jersey.config.client.httpUrlConnection.setMethodWorkaround", true);
+
+        client = ClientBuilder.newClient(config);
+        */
         this.target = this.client.target(uri);
     }
 

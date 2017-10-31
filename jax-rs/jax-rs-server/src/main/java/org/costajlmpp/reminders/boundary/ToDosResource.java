@@ -44,9 +44,15 @@ public class ToDosResource {
 
     @PUT
     @Path("{id:\\d+}")
-    public void update(@PathParam("id") long id, ToDo todo) {
+    public Response update(@PathParam("id") long id, ToDo todo) {
+        if (this.find(id) == null) {
+            return Response.status(Response.Status.NOT_FOUND).build();
+        }
+
         todo.setId(id);
         this.manager.save(todo);
+
+        return Response.noContent().build();
     }
 
     @GET
@@ -55,9 +61,12 @@ public class ToDosResource {
     }
 
     @PATCH
-    public void updateTodo(JsonPatch jsonPatch) {
+    @Path("{id}")
+    public void updateStatus(@PathParam("id") long id, JsonPatch jsonPatch) {
 
         //TODO:: missing implementation
+
+        System.out.println(jsonPatch);
 
     }
 
