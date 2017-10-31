@@ -1,6 +1,6 @@
 # JAX-RS
 
-Os leader da esficicação tinham como objetivo conseguir prover duas "grandes" novidades nesta realease:
+Os leaders da especificação tinham como objetivo conseguir prover duas "grandes" novidades nesta realease:
 
 * Reactive Client API
 * Server-sent events ()
