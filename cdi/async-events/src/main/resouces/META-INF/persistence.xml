@@ -16,7 +16,7 @@
 
             <!-- http://wiki.eclipse.org/EclipseLink/Examples/JPA/CustomSequencing
              -->
-            <property name="eclipselink.session.customizer" value="org.jcosta.core.CustomUUIDSequence"/>
+            <property name="eclipselink.session.customizer" value="org.costajlmpp.core.CustomUUIDSequence"/>
         </properties>
     </persistence-unit>
 </persistence>
