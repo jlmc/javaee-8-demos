@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-        <parent>
+    <parent>
         <groupId>org.costajlmpp</groupId>
         <artifactId>jax-rs</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>server-sent-events</artifactId>
+    <artifactId>jax-rs-server</artifactId>
     <packaging>war</packaging>
 
     <properties>
@@ -30,7 +30,7 @@
     </dependencies>
 
     <build>
-        <finalName>sse</finalName>
+        <finalName>jax-rs-server</finalName>
     </build>
-    
+
 </project>
